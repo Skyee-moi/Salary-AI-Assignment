@@ -30,3 +30,6 @@ print(f"Estimated Tax:    ${(predicted_salary * 0.12):,.2f}")
 print("-" * 40)
 print(f"NET TAKE-HOME:    ${(predicted_salary * 0.88):,.2f}")
 print("="*40)
+
+import joblib
+joblib.dump(model,'salary_model.pkl')
